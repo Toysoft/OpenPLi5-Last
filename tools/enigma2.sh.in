@@ -24,10 +24,10 @@ if [ -d /home/root ]; then
 	cd
 fi
 
-LIBS=@libdir@/libopen.so.0.0.0 LD_PRELOAD=$LIBS @bindir@/enigma2
-#
-#sync
-#LD_PRELOAD=$LIBS @bindir@/enigma2
+LIBS=@libdir@/libopen.so.0.0.0
+
+sync
+LD_PRELOAD=$LIBS @bindir@/enigma2
 
 # enigma2 exit codes:
 #
